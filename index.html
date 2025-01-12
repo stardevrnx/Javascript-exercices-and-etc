@@ -26,15 +26,23 @@
 </head>
 <body>
 
-    <div class="init" onclick="changeDivText()">
+    <div class="init" onclick="changeDivText()" onmouseenter="changeDivColor()">
         interaja
     </div>
     
 <script>
+
     function changeDivText() {
         var area = window.document.getElementsByClassName("init")
         area.innerText = "clicou"
     }
+
+    function changeDivColor() {
+        var a = window.document.getElementsByClassName("init")
+
+        a.background = blue
+    }
+
 </script>
 
 </body>
