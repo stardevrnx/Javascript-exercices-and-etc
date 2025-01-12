@@ -26,11 +26,17 @@
 </head>
 <body>
 
-    <div class="init" onclick="changeDivColor()">
+    <div class="init" onclick="changeDivText()">
         interaja
     </div>
     
-<script type="js" src="main.js"></script>
+<script>
+    function changeDivText() {
+        area = document.getElementsByClassName("init")
+
+        area.innerText = "clicou"
+    }
+</script>
 
 </body>
 </html>
