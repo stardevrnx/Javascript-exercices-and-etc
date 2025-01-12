@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <div class="init" onclick="changeDivText()" onmouseenter="changeDivColor()">
+    <div class="init" onclick="changeDivText()" onmouseenter="changeDivColor()" onmouseout="saiu()">
         interaja
     </div>
     
@@ -40,7 +40,13 @@
         function changeDivColor() {
             var a = window.document.getElementsByClassName("init")
 
-            a.innerText = "saiu"
+            a.innerText = "entrou"
+        }
+
+        function saiu() {
+            var a = window.document.getElementsByClassName('init')
+
+            a.innerText = 'saiu'
         }
 
     </script>
