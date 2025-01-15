@@ -15,17 +15,20 @@
 
     <input type="button" value="somar" onclick="somar()">
 
+    <div id="res">resultado</div>
+
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.getElementById('txtn2')
-            
+            var res = document.getElementById('res')
+
             var n1 = Number(tn1.value)
             var n2 = NUmber(tn2.value)
 
             var result = n1 + n2
 
-            window.document.write('esse e o resultado: ' + result)
+            res.innerText(result)
         }
     </script>
 
