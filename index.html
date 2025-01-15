@@ -9,14 +9,21 @@
 
     <h1>Somando Valores</h1>
 
-    <input type="number" name="txt1" id="txt2"> +
+    <input type="number" name="txtn1" id="txtn1"> +
 
-    <input type="number" name="txtn2" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
 
     <input type="button" value="somar" onclick="somar()">
 
     <script>
-        
+        function somar() {
+            var n1 = window.document.getElementById('txtn1')
+            var n2 = window.document.getElementById('txtn2')
+
+            var result = n1 + n2
+
+            document.write('esse e o resultado: ' + result)
+        }
     </script>
 
 </body>
